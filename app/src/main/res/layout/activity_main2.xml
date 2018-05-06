@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+
+    tools:context="com.example.android.location.Main2Activity">
+
+    <EditText
+        android:id="@+id/person_name_field"
+        android:layout_width="299dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/person_password_field" />
+
+    <EditText
+        android:id="@+id/person_password_field"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_below="@+id/person_name_field"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:layout_marginTop="15dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:onClick="toLogin"
+        android:textColor="#26ae90"
+        android:background="#eceef1"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/person_password_field"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="325dp" />
+</RelativeLayout>

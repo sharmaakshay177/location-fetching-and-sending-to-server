@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    tools:context="com.example.android.location.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:id="@+id/linearLayout">
+
+       <TextView
+           android:layout_width="300dp"
+           android:layout_height="0dp"
+           android:text=" Address Activity"
+           android:textSize="20sp"
+           android:gravity="center"
+           android:layout_marginLeft="40dp"
+           android:layout_weight="1" />
+<Button
+    android:id="@+id/locationbutton"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text=" Get Location "
+    android:textAllCaps="false"
+    android:textColor="#26ae90"
+    android:textSize="20sp"
+    android:layout_marginLeft="40dp"
+    android:background="#eceef1"
+    android:layout_marginTop="20dp" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="60dp"
+           android:background="#eceef1"
+           android:layout_gravity="center"
+           android:paddingBottom="10dp"
+           android:weightSum="2">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="20dp"
+       android:text="latitude : "
+       android:gravity="center"
+       android:textSize="20sp"
+       android:layout_weight="0.5"/>
+   <TextView
+       android:id="@+id/lat_label"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="20dp"
+       android:gravity="left"
+       android:text=""
+       android:textSize="20sp"
+       android:layout_weight="1.5"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+           android:background="#eceef1"
+           android:paddingBottom="10dp"
+           android:weightSum="2">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"
+               android:text="longitude : "
+               android:gravity="center"
+               android:textSize="20sp"
+               android:layout_weight="0.5"/>
+           <TextView
+               android:id="@+id/long_label"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"
+               android:text=""
+               android:textSize="20sp"
+               android:layout_weight="1.5"/>
+
+       </LinearLayout>
+       <Button
+           android:id="@+id/insert_btn"
+           android:layout_width="300dp"
+           android:layout_height="0dp"
+           android:text="send data to server"
+           android:layout_marginLeft="40dp"
+           android:background="#eceef1"
+           android:textColor="#26ae90"
+           android:layout_marginTop="101dp"
+           android:onClick="toInsert"
+           android:layout_weight="1" />
+       <Button
+           android:id="@+id/login_btn"
+           android:layout_width="300dp"
+           android:layout_height="0dp"
+           android:text="to login activity"
+           android:background="#eceef1"
+           android:textColor="#26ae90"
+           android:layout_marginLeft="40dp"
+           android:layout_marginTop="20dp"
+           android:layout_weight="1" />
+   </LinearLayout>
+
+
+</RelativeLayout>
